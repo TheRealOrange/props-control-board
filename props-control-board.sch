@@ -635,9 +635,9 @@ Wire Wire Line
 	7200 2750 7100 2750
 Text Label 7200 2450 2    50   ~ 0
 RX
-Text Label 7200 2550 2    50   ~ 0
-D2
 Text Label 7200 2650 2    50   ~ 0
+D2
+Text Label 4750 1850 2    50   ~ 0
 D3
 Wire Wire Line
 	3750 2650 4950 2650
@@ -837,613 +837,241 @@ Text Label 8450 5350 3    50   ~ 0
 ISOL_GND
 Text Label 8450 2450 3    50   ~ 0
 ISOL_GND
+Text Label 3650 1550 0    50   ~ 0
+D3
+Text Label 3650 1450 0    50   ~ 0
+D2
+Text Label 3650 1350 0    50   ~ 0
+RX
+Wire Wire Line
+	4400 1350 4750 1350
+Wire Wire Line
+	4300 1250 4750 1250
+Wire Wire Line
+	4750 1950 4650 1950
 $Comp
-L props-control-board:HCPL2631SD U10
-U 1 1 5FD4EE54
-P 8450 5000
-F 0 "U10" H 8450 5567 50  0000 C CNN
-F 1 "HCPL2631SD" H 8450 5476 50  0000 C CNN
-F 2 "Package_SO:SSO-8_6.7x9.8mm_P2.54mm_Clearance8mm" H 8450 5000 50  0001 C CNN
-F 3 "https://www.onsemi.com/pub/Collateral/HCPL2631-D.PDF" H 8450 5000 50  0001 C CNN
-F 4 "HCPL2631SDCT-ND" H 8450 5000 50  0001 C CNN "Digikey Part Number"
-	1    8450 5000
+L power:GND #PWR015
+U 1 1 5FF870AF
+P 4650 1950
+F 0 "#PWR015" H 4650 1700 50  0001 C CNN
+F 1 "GND" H 4655 1777 50  0000 C CNN
+F 2 "" H 4650 1950 50  0001 C CNN
+F 3 "" H 4650 1950 50  0001 C CNN
+	1    4650 1950
+	1    0    0    -1  
+$EndComp
+Text GLabel 5500 900  0    50   Input ~ 0
+5V
+Wire Wire Line
+	5500 900  5800 900 
+Wire Wire Line
+	5800 900  6150 900 
+Wire Wire Line
+	7300 900  7750 900 
+Connection ~ 7300 900 
+Wire Wire Line
+	7200 900  7300 900 
+Wire Wire Line
+	6750 900  6900 900 
+Text GLabel 7750 900  2    50   Input ~ 0
+3V3
+Connection ~ 5800 900 
+$Comp
+L power:GND #PWR016
+U 1 1 5FB5272F
+P 5800 1200
+F 0 "#PWR016" H 5800 950 50  0001 C CNN
+F 1 "GND" H 5805 1027 50  0000 C CNN
+F 2 "" H 5800 1200 50  0001 C CNN
+F 3 "" H 5800 1200 50  0001 C CNN
+	1    5800 1200
 	1    0    0    -1  
 $EndComp
 $Comp
-L props-control-board:HCPL2631SD U9
-U 1 1 5FE94181
-P 8450 2100
-F 0 "U9" H 8450 2667 50  0000 C CNN
-F 1 "HCPL2631SD" H 8450 2576 50  0000 C CNN
-F 2 "Package_SO:SSO-8_6.7x9.8mm_P2.54mm_Clearance8mm" H 8450 2100 50  0001 C CNN
-F 3 "https://www.onsemi.com/pub/Collateral/HCPL2631-D.PDF" H 8450 2100 50  0001 C CNN
-F 4 "HCPL2631SDCT-ND" H 8450 2100 50  0001 C CNN "Digikey Part Number"
-	1    8450 2100
+L power:GND #PWR020
+U 1 1 5FB5252A
+P 7300 1200
+F 0 "#PWR020" H 7300 950 50  0001 C CNN
+F 1 "GND" H 7305 1027 50  0000 C CNN
+F 2 "" H 7300 1200 50  0001 C CNN
+F 3 "" H 7300 1200 50  0001 C CNN
+	1    7300 1200
 	1    0    0    -1  
 $EndComp
 $Comp
-L props-control-board:RFM-0505S U11
-U 1 1 5FCC7831
-P 7700 5650
-F 0 "U11" H 8028 5588 50  0000 L CNN
-F 1 "RFM-0505S" H 8028 5497 50  0000 L CNN
-F 2 "props-control-board:RFM-0505S" H 7700 5900 50  0001 C CNN
-F 3 "https://www.recom-power.com/pdf/Econoline/RFM.pdf" H 7700 5900 50  0001 C CNN
-F 4 "945-3159-ND" H 7700 5650 50  0001 C CNN "Digikey Part Number"
-	1    7700 5650
+L power:GND #PWR018
+U 1 1 5FB50EBF
+P 6450 1200
+F 0 "#PWR018" H 6450 950 50  0001 C CNN
+F 1 "GND" H 6455 1027 50  0000 C CNN
+F 2 "" H 6450 1200 50  0001 C CNN
+F 3 "" H 6450 1200 50  0001 C CNN
+	1    6450 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 1450 4750 1450
+Wire Wire Line
+	4350 1150 4750 1150
+Text GLabel 4350 1150 0    50   Input ~ 0
+5V
+Text Label 2350 2150 2    50   ~ 0
+A6
+Text Label 2350 1850 2    50   ~ 0
+SDA
+Text Label 2350 1950 2    50   ~ 0
+SCL
+Text Label 3650 1650 0    50   ~ 0
+D4
+Text Label 3650 1750 0    50   ~ 0
+D5
+Text Label 3650 1850 0    50   ~ 0
+D6
+Text Label 4750 1750 2    50   ~ 0
+D4
+Text Label 4750 1650 2    50   ~ 0
+D5
+Text Label 4750 1550 2    50   ~ 0
+D6
+Text Label 3650 1250 0    50   ~ 0
+TX
+Wire Wire Line
+	3650 2550 4500 2550
+Wire Wire Line
+	3650 2350 4300 2350
+Wire Wire Line
+	3650 2450 4400 2450
+Wire Wire Line
+	4500 1450 4500 2550
+Connection ~ 4500 2550
+Wire Wire Line
+	4500 2550 4950 2550
+Wire Wire Line
+	4400 1350 4400 2450
+Connection ~ 4400 2450
+Wire Wire Line
+	4400 2450 4950 2450
+Wire Wire Line
+	4300 1250 4300 2350
+Connection ~ 4300 2350
+Wire Wire Line
+	4300 2350 4950 2350
+Text Label 7200 2550 2    50   ~ 0
+TX
+$Comp
+L Connector:Conn_01x09_Female J5
+U 1 1 5FBE7507
+P 4950 1550
+F 0 "J5" H 4978 1576 50  0000 L CNN
+F 1 "Conn_01x09_Female" H 4978 1485 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B9B-XH-A_1x09_P2.50mm_Vertical" H 4950 1550 50  0001 C CNN
+F 3 "~" H 4950 1550 50  0001 C CNN
+	1    4950 1550
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x04_Female J1
-U 1 1 604E01D9
-P 1100 1000
-F 0 "J1" H 1128 976 50  0000 L CNN
-F 1 "Conn_01x04_Female" H 1128 885 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 1100 1000 50  0001 C CNN
-F 3 "~" H 1100 1000 50  0001 C CNN
-	1    1100 1000
+L Device:C C5
+U 1 1 5FB4E123
+P 5800 1050
+F 0 "C5" H 5915 1096 50  0000 L CNN
+F 1 "10u" H 5915 1005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5838 900 50  0001 C CNN
+F 3 "~" H 5800 1050 50  0001 C CNN
+F 4 "1276-6460-1-ND" H 5800 1050 50  0001 C CNN "Digikey Part Number"
+	1    5800 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C10
+U 1 1 5FB4F003
+P 7300 1050
+F 0 "C10" H 7415 1096 50  0000 L CNN
+F 1 "22u" H 7415 1005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7338 900 50  0001 C CNN
+F 3 "~" H 7300 1050 50  0001 C CNN
+F 4 "1276-6455-1-ND" H 7300 1050 50  0001 C CNN "Digikey Part Number"
+	1    7300 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L2
+U 1 1 5FB4FD00
+P 7050 900
+F 0 "L2" V 7240 900 50  0000 C CNN
+F 1 "100u" V 7149 900 50  0000 C CNN
+F 2 "Inductor_SMD:L_TDK_SLF7045" H 7050 900 50  0001 C CNN
+F 3 "~" H 7050 900 50  0001 C CNN
+F 4 "445-2015-1-ND" H 7050 900 50  0001 C CNN "Digikey Part Number"
+	1    7050 900 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Regulator_Linear:AZ1117-3.3 U7
+U 1 1 5FB4D2B8
+P 6450 900
+F 0 "U7" H 6450 1142 50  0000 C CNN
+F 1 "AZ1117-3.3" H 6450 1051 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 6450 1150 50  0001 C CIN
+F 3 "https://www.diodes.com/assets/Datasheets/AZ1117.pdf" H 6450 900 50  0001 C CNN
+F 4 "AZ1117CH-3.3TRG1DICT-ND" H 6450 900 50  0001 C CNN "Digikey Part Number"
+	1    6450 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L props-control-board:SX1278_module U8
+U 1 1 5FB4A5F0
+P 6400 5850
+F 0 "U8" H 6500 6500 50  0000 C CNN
+F 1 "SX1278_module" H 6750 6400 50  0000 C CNN
+F 2 "props-control-board:SX1278_module" H 6400 5850 50  0001 C CNN
+F 3 "" H 6400 5850 50  0001 C CNN
+	1    6400 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 5FB66124
+P 6100 6800
+F 0 "C8" V 5848 6800 50  0000 C CNN
+F 1 "100n" V 5939 6800 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6138 6650 50  0001 C CNN
+F 3 "~" H 6100 6800 50  0001 C CNN
+F 4 "1276-CL10B104KB8NNNLCT-ND" H 6100 6800 50  0001 C CNN "Digikey Part Number"
+	1    6100 6800
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J3
+U 1 1 5FB75D0A
+P 1100 2600
+F 0 "J3" H 992 2275 50  0000 C CNN
+F 1 "Conn_01x03_Female" H 992 2366 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical" H 1100 2600 50  0001 C CNN
+F 3 "~" H 1100 2600 50  0001 C CNN
+	1    1100 2600
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R6
-U 1 1 5FE941E5
-P 7700 2050
-F 0 "R6" V 7493 2050 50  0000 C CNN
-F 1 "150" V 7584 2050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7630 2050 50  0001 C CNN
-F 3 "~" H 7700 2050 50  0001 C CNN
-F 4 "RMCF0805JT150RCT-ND" H 7700 2050 50  0001 C CNN "Digikey Part Number"
-	1    7700 2050
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:Conn_01x02_Female J13
-U 1 1 6012C42A
-P 2750 3450
-F 0 "J13" H 2778 3426 50  0000 L CNN
-F 1 "Conn_01x02_Female" H 2778 3335 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 2750 3450 50  0001 C CNN
-F 3 "~" H 2750 3450 50  0001 C CNN
-	1    2750 3450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:DMN24H3D5L Q1
-U 1 1 5FE941CA
-P 9600 1150
-F 0 "Q1" H 9805 1196 50  0000 L CNN
-F 1 "DMN24H3D5L" H 9805 1105 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 9800 1075 50  0001 L CIN
-F 3 "http://www.diodes.com/assets/Datasheets/DMN24H3D5L.pdf" H 9600 1150 50  0001 L CNN
-F 4 "DMN24H3D5L-7DICT-ND" H 9600 1150 50  0001 C CNN "Digikey Part Number"
-	1    9600 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H1
-U 1 1 600E4AD1
-P 6050 3250
-F 0 "H1" H 6150 3296 50  0000 L CNN
-F 1 "MountingHole" H 6150 3205 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 6050 3250 50  0001 C CNN
-F 3 "~" H 6050 3250 50  0001 C CNN
-	1    6050 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H2
-U 1 1 600DAC3D
-P 6050 3450
-F 0 "H2" H 6150 3496 50  0000 L CNN
-F 1 "MountingHole" H 6150 3405 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 6050 3450 50  0001 C CNN
-F 3 "~" H 6050 3450 50  0001 C CNN
-	1    6050 3450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H3
-U 1 1 600D0D7A
-P 6050 3650
-F 0 "H3" H 6150 3696 50  0000 L CNN
-F 1 "MountingHole" H 6150 3605 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 6050 3650 50  0001 C CNN
-F 3 "~" H 6050 3650 50  0001 C CNN
-	1    6050 3650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H4
-U 1 1 600CFA01
-P 6050 3850
-F 0 "H4" H 6150 3896 50  0000 L CNN
-F 1 "MountingHole" H 6150 3805 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 6050 3850 50  0001 C CNN
-F 3 "~" H 6050 3850 50  0001 C CNN
-	1    6050 3850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R4
-U 1 1 600386E3
-P 4900 4700
-F 0 "R4" H 4970 4746 50  0000 L CNN
-F 1 "10K" H 4970 4655 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4830 4700 50  0001 C CNN
-F 3 "~" H 4900 4700 50  0001 C CNN
-F 4 "RNCP0805FTD10K0CT-ND" H 4900 4700 50  0001 C CNN "Digikey Part Number"
-	1    4900 4700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x03_Female J4
-U 1 1 5FF2AE38
-P 1100 3400
-F 0 "J4" H 992 3075 50  0000 C CNN
-F 1 "Conn_01x03_Female" H 992 3166 50  0000 C CNN
-F 2 "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical" H 1100 3400 50  0001 C CNN
-F 3 "~" H 1100 3400 50  0001 C CNN
-	1    1100 3400
+L Connector:Conn_01x03_Female J2
+U 1 1 5FB800EE
+P 1100 1800
+F 0 "J2" H 992 1475 50  0000 C CNN
+F 1 "Conn_01x03_Female" H 992 1566 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical" H 1100 1800 50  0001 C CNN
+F 3 "~" H 1100 1800 50  0001 C CNN
+	1    1100 1800
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector:Conn_01x05_Female J6
-U 1 1 5FF1DA69
-P 7400 2550
-F 0 "J6" H 7428 2576 50  0000 L CNN
-F 1 "Conn_01x05_Female" H 7428 2485 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical" H 7400 2550 50  0001 C CNN
-F 3 "~" H 7400 2550 50  0001 C CNN
-	1    7400 2550
-	1    0    0    -1  
-$EndComp
-$Comp
-L props-control-board:arduino_pro_mini U3
-U 1 1 5FB4582A
-P 3000 1550
-F 0 "U3" H 3000 2250 50  0000 C CNN
-F 1 "arduino_pro_mini" H 3250 2150 50  0000 C CNN
-F 2 "props-control-board:pro_mini" H 2700 2150 50  0001 C CNN
-F 3 "" H 2700 2150 50  0001 C CNN
-	1    3000 1550
-	1    0    0    -1  
-$EndComp
-$Comp
-L props-control-board:ADG3301 U5
-U 1 1 5FC835E0
-P 4350 3500
-F 0 "U5" H 4300 3917 50  0000 C CNN
-F 1 "TXB0101DCKT" H 4300 3826 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering" H 4350 3500 50  0001 C CNN
-F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftxb0101" H 4350 3500 50  0001 C CNN
-F 4 "296-32599-1-ND" H 4350 3500 50  0001 C CNN "Digikey Part Number"
-	1    4350 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L props-control-board:ADG3304 U6
-U 1 1 5FB5A7D9
-P 5400 2300
-F 0 "U6" H 5400 2617 50  0000 C CNN
-F 1 "TXB0104PWR" H 5400 2526 50  0000 C CNN
-F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 5350 2850 50  0001 C CNN
-F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftxb0104" H 5350 2850 50  0001 C CNN
-F 4 "296-21929-1-ND" H 5400 2300 50  0001 C CNN "Digikey Part Number"
-	1    5400 2300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R5
-U 1 1 5FE941EE
-P 7700 1650
-F 0 "R5" V 7493 1650 50  0000 C CNN
-F 1 "150" V 7584 1650 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7630 1650 50  0001 C CNN
-F 3 "~" H 7700 1650 50  0001 C CNN
-F 4 "RMCF0805JT150RCT-ND" H 7700 1650 50  0001 C CNN "Digikey Part Number"
-	1    7700 1650
-	0    1    1    0   
-$EndComp
-$Comp
-L Transistor_FET:DMN24H3D5L Q2
-U 1 1 5FE941C4
-P 9600 1600
-F 0 "Q2" H 9805 1554 50  0000 L CNN
-F 1 "DMN24H3D5L" H 9805 1645 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 9800 1525 50  0001 L CIN
-F 3 "http://www.diodes.com/assets/Datasheets/DMN24H3D5L.pdf" H 9600 1600 50  0001 L CNN
-F 4 "DMN24H3D5L-7DICT-ND" H 9600 1600 50  0001 C CNN "Digikey Part Number"
-	1    9600 1600
-	1    0    0    1   
-$EndComp
-$Comp
-L Connector:Conn_01x02_Female J9
-U 1 1 5FE941B5
-P 10200 1800
-F 0 "J9" H 10228 1776 50  0000 L CNN
-F 1 "Conn_01x02_Female" H 10228 1685 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 10200 1800 50  0001 C CNN
-F 3 "~" H 10200 1800 50  0001 C CNN
-	1    10200 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R9
-U 1 1 5FE941AA
-P 9300 1850
-F 0 "R9" H 9370 1896 50  0000 L CNN
-F 1 "10K" H 9370 1805 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9230 1850 50  0001 C CNN
-F 3 "~" H 9300 1850 50  0001 C CNN
-F 4 "RNCP0805FTD10K0CT-ND" H 9300 1850 50  0001 C CNN "Digikey Part Number"
-	1    9300 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:DMN24H3D5L Q3
-U 1 1 5FE941A4
-P 9600 2500
-F 0 "Q3" H 9805 2546 50  0000 L CNN
-F 1 "DMN24H3D5L" H 9805 2455 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 9800 2425 50  0001 L CIN
-F 3 "http://www.diodes.com/assets/Datasheets/DMN24H3D5L.pdf" H 9600 2500 50  0001 L CNN
-F 4 "DMN24H3D5L-7DICT-ND" H 9600 2500 50  0001 C CNN "Digikey Part Number"
-	1    9600 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:DMN24H3D5L Q4
-U 1 1 5FE9419E
-P 9600 2950
-F 0 "Q4" H 9805 2904 50  0000 L CNN
-F 1 "DMN24H3D5L" H 9805 2995 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 9800 2875 50  0001 L CIN
-F 3 "http://www.diodes.com/assets/Datasheets/DMN24H3D5L.pdf" H 9600 2950 50  0001 L CNN
-F 4 "DMN24H3D5L-7DICT-ND" H 9600 2950 50  0001 C CNN "Digikey Part Number"
-	1    9600 2950
-	1    0    0    1   
-$EndComp
-$Comp
-L Connector:Conn_01x02_Female J10
-U 1 1 5FE9418F
-P 10200 3150
-F 0 "J10" H 10228 3126 50  0000 L CNN
-F 1 "Conn_01x02_Female" H 10228 3035 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 10200 3150 50  0001 C CNN
-F 3 "~" H 10200 3150 50  0001 C CNN
-	1    10200 3150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R10
-U 1 1 5FE9417B
-P 9300 3200
-F 0 "R10" H 9370 3246 50  0000 L CNN
-F 1 "10K" H 9370 3155 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9230 3200 50  0001 C CNN
-F 3 "~" H 9300 3200 50  0001 C CNN
-F 4 "RNCP0805FTD10K0CT-ND" H 9300 3200 50  0001 C CNN "Digikey Part Number"
-	1    9300 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x04_Female J7
-U 1 1 5FE3AB49
-P 7400 3100
-F 0 "J7" H 7428 3076 50  0000 L CNN
-F 1 "Conn_01x04_Female" H 7428 2985 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7400 3100 50  0001 C CNN
-F 3 "~" H 7400 3100 50  0001 C CNN
-	1    7400 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R7
-U 1 1 5FDB49EE
-P 7700 4550
-F 0 "R7" V 7493 4550 50  0000 C CNN
-F 1 "150" V 7584 4550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7630 4550 50  0001 C CNN
-F 3 "~" H 7700 4550 50  0001 C CNN
-F 4 "RMCF0805JT150RCT-ND" H 7700 4550 50  0001 C CNN "Digikey Part Number"
-	1    7700 4550
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R8
-U 1 1 5FDB58CA
-P 7700 4950
-F 0 "R8" V 7493 4950 50  0000 C CNN
-F 1 "150" V 7584 4950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7630 4950 50  0001 C CNN
-F 3 "~" H 7700 4950 50  0001 C CNN
-F 4 "RMCF0805JT150RCT-ND" H 7700 4950 50  0001 C CNN "Digikey Part Number"
-	1    7700 4950
-	0    1    1    0   
-$EndComp
-$Comp
-L Transistor_FET:DMN24H3D5L Q5
-U 1 1 5FD6D248
-P 9600 4050
-F 0 "Q5" H 9805 4096 50  0000 L CNN
-F 1 "DMN24H3D5L" H 9805 4005 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 9800 3975 50  0001 L CIN
-F 3 "http://www.diodes.com/assets/Datasheets/DMN24H3D5L.pdf" H 9600 4050 50  0001 L CNN
-F 4 "DMN24H3D5L-7DICT-ND" H 9600 4050 50  0001 C CNN "Digikey Part Number"
-	1    9600 4050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:DMN24H3D5L Q6
-U 1 1 5FD6D242
-P 9600 4500
-F 0 "Q6" H 9805 4454 50  0000 L CNN
-F 1 "DMN24H3D5L" H 9805 4545 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 9800 4425 50  0001 L CIN
-F 3 "http://www.diodes.com/assets/Datasheets/DMN24H3D5L.pdf" H 9600 4500 50  0001 L CNN
-F 4 "DMN24H3D5L-7DICT-ND" H 9600 4500 50  0001 C CNN "Digikey Part Number"
-	1    9600 4500
-	1    0    0    1   
-$EndComp
-$Comp
-L Connector:Conn_01x02_Female J11
-U 1 1 5FD6D233
-P 10200 4700
-F 0 "J11" H 10228 4676 50  0000 L CNN
-F 1 "Conn_01x02_Female" H 10228 4585 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 10200 4700 50  0001 C CNN
-F 3 "~" H 10200 4700 50  0001 C CNN
-	1    10200 4700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R11
-U 1 1 5FD6D225
-P 9300 4750
-F 0 "R11" H 9370 4796 50  0000 L CNN
-F 1 "10K" H 9370 4705 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9230 4750 50  0001 C CNN
-F 3 "~" H 9300 4750 50  0001 C CNN
-F 4 "RNCP0805FTD10K0CT-ND" H 9300 4750 50  0001 C CNN "Digikey Part Number"
-	1    9300 4750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:DMN24H3D5L Q7
-U 1 1 5FC1EAB0
-P 9600 5400
-F 0 "Q7" H 9805 5446 50  0000 L CNN
-F 1 "DMN24H3D5L" H 9805 5355 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 9800 5325 50  0001 L CIN
-F 3 "http://www.diodes.com/assets/Datasheets/DMN24H3D5L.pdf" H 9600 5400 50  0001 L CNN
-F 4 "DMN24H3D5L-7DICT-ND" H 9600 5400 50  0001 C CNN "Digikey Part Number"
-	1    9600 5400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:DMN24H3D5L Q8
-U 1 1 5FC52CC6
-P 9600 5850
-F 0 "Q8" H 9805 5804 50  0000 L CNN
-F 1 "DMN24H3D5L" H 9805 5895 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 9800 5775 50  0001 L CIN
-F 3 "http://www.diodes.com/assets/Datasheets/DMN24H3D5L.pdf" H 9600 5850 50  0001 L CNN
-F 4 "DMN24H3D5L-7DICT-ND" H 9600 5850 50  0001 C CNN "Digikey Part Number"
-	1    9600 5850
-	1    0    0    1   
-$EndComp
-$Comp
-L Connector:Conn_01x02_Female J12
-U 1 1 5FCD0AC2
-P 10200 6050
-F 0 "J12" H 10228 6026 50  0000 L CNN
-F 1 "Conn_01x02_Female" H 10228 5935 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 10200 6050 50  0001 C CNN
-F 3 "~" H 10200 6050 50  0001 C CNN
-	1    10200 6050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R2
-U 1 1 5FD24A9B
-P 1500 5950
-F 0 "R2" V 1707 5950 50  0000 C CNN
-F 1 "4K7" V 1616 5950 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 1430 5950 50  0001 C CNN
-F 3 "~" H 1500 5950 50  0001 C CNN
-F 4 "RMCF1206JT4K70CT-ND" H 1500 5950 50  0001 C CNN "Digikey Part Number"
-	1    1500 5950
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R1
-U 1 1 5FD1B6D0
-P 1500 5500
-F 0 "R1" V 1707 5500 50  0000 C CNN
-F 1 "4K7" V 1616 5500 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 1430 5500 50  0001 C CNN
-F 3 "~" H 1500 5500 50  0001 C CNN
-F 4 "RMCF1206JT4K70CT-ND" H 1500 5500 50  0001 C CNN "Digikey Part Number"
-	1    1500 5500
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R3
-U 1 1 5FD02EAB
-P 2750 5400
-F 0 "R3" H 2820 5446 50  0000 L CNN
-F 1 "10K" H 2820 5355 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2680 5400 50  0001 C CNN
-F 3 "~" H 2750 5400 50  0001 C CNN
-F 4 "RNCP0805FTD10K0CT-ND" H 2750 5400 50  0001 C CNN "Digikey Part Number"
-	1    2750 5400
-	1    0    0    -1  
-$EndComp
-$Comp
-L props-control-board:VOS628A U2
-U 1 1 5FCF1438
-P 2300 5850
-F 0 "U2" H 2300 6117 50  0000 C CNN
-F 1 "VOS628A" H 2300 6026 50  0000 C CNN
-F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 2300 5850 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/83466/vos628a.pdf" H 2300 5850 50  0001 C CNN
-F 4 "VOS628A-X001TCT-ND" H 2300 5850 50  0001 C CNN "Digikey Part Number"
-	1    2300 5850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x02_Female J8
-U 1 1 5FCE2713
-P 7450 3700
-F 0 "J8" H 7478 3676 50  0000 L CNN
-F 1 "Conn_01x02_Female" H 7478 3585 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 7450 3700 50  0001 C CNN
-F 3 "~" H 7450 3700 50  0001 C CNN
-	1    7450 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R12
-U 1 1 5FC6DFEB
-P 9300 6100
-F 0 "R12" H 9370 6146 50  0000 L CNN
-F 1 "10K" H 9370 6055 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9230 6100 50  0001 C CNN
-F 3 "~" H 9300 6100 50  0001 C CNN
-F 4 "RNCP0805FTD10K0CT-ND" H 9300 6100 50  0001 C CNN "Digikey Part Number"
-	1    9300 6100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C2
-U 1 1 5FC2BDD5
-P 1550 6350
-F 0 "C2" V 1298 6350 50  0000 C CNN
-F 1 "20p" V 1389 6350 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1588 6200 50  0001 C CNN
-F 3 "~" H 1550 6350 50  0001 C CNN
-F 4 "1276-1829-1-ND" H 1550 6350 50  0001 C CNN "Digikey Part Number"
-	1    1550 6350
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C3
-U 1 1 5FC2AAA8
-P 1550 6850
-F 0 "C3" V 1298 6850 50  0000 C CNN
-F 1 "20p" V 1389 6850 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1588 6700 50  0001 C CNN
-F 3 "~" H 1550 6850 50  0001 C CNN
-F 4 "1276-1829-1-ND" H 1550 6850 50  0001 C CNN "Digikey Part Number"
-	1    1550 6850
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:Crystal_GND24 Y1
-U 1 1 5FC23711
-P 2050 6600
-F 0 "Y1" V 2004 6844 50  0000 L CNN
-F 1 "Crystal_GND24" V 2095 6844 50  0000 L CNN
-F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm_HandSoldering" H 2050 6600 50  0001 C CNN
-F 3 "~" H 2050 6600 50  0001 C CNN
-F 4 "SER4069CT-ND" H 2050 6600 50  0001 C CNN "Digikey Part Number"
-	1    2050 6600
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:C C12
-U 1 1 5FC02449
-P 7000 4500
-F 0 "C12" H 7115 4546 50  0000 L CNN
-F 1 "1u" H 7115 4455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7038 4350 50  0001 C CNN
-F 3 "~" H 7000 4500 50  0001 C CNN
-F 4 "1276-1034-1-ND" H 7000 4500 50  0001 C CNN "Digikey Part Number"
-	1    7000 4500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C11
-U 1 1 5FC00DD5
-P 6600 4500
-F 0 "C11" H 6715 4546 50  0000 L CNN
-F 1 "4.7u" H 6715 4455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6638 4350 50  0001 C CNN
-F 3 "~" H 6600 4500 50  0001 C CNN
-F 4 "1276-1044-1-ND" H 6600 4500 50  0001 C CNN "Digikey Part Number"
-	1    6600 4500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C6
-U 1 1 5FBF7495
-P 5400 4500
-F 0 "C6" H 5515 4546 50  0000 L CNN
-F 1 "100n" H 5515 4455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5438 4350 50  0001 C CNN
-F 3 "~" H 5400 4500 50  0001 C CNN
-F 4 "1276-CL10B104KB8NNNLCT-ND" H 5400 4500 50  0001 C CNN "Digikey Part Number"
-	1    5400 4500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C7
-U 1 1 5FBF65D1
-P 5800 4500
-F 0 "C7" H 5915 4546 50  0000 L CNN
-F 1 "100n" H 5915 4455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5838 4350 50  0001 C CNN
-F 3 "~" H 5800 4500 50  0001 C CNN
-F 4 "1276-CL10B104KB8NNNLCT-ND" H 5800 4500 50  0001 C CNN "Digikey Part Number"
-	1    5800 4500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C9
-U 1 1 5FBF5E6E
-P 6200 4500
-F 0 "C9" H 6315 4546 50  0000 L CNN
-F 1 "10n" H 6315 4455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6238 4350 50  0001 C CNN
-F 3 "~" H 6200 4500 50  0001 C CNN
-F 4 "1276-1009-1-ND" H 6200 4500 50  0001 C CNN "Digikey Part Number"
-	1    6200 4500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:L L1
-U 1 1 5FBBE5F6
-P 2700 4200
-F 0 "L1" V 2890 4200 50  0000 C CNN
-F 1 "100u" V 2799 4200 50  0000 C CNN
-F 2 "Inductor_SMD:L_TDK_SLF7045" H 2700 4200 50  0001 C CNN
-F 3 "~" H 2700 4200 50  0001 C CNN
-F 4 "445-2015-1-ND" H 2700 4200 50  0001 C CNN "Digikey Part Number"
-	1    2700 4200
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:C C4
-U 1 1 5FBBE5DA
-P 2950 4350
-F 0 "C4" H 3065 4396 50  0000 L CNN
-F 1 "22u" H 3065 4305 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2988 4200 50  0001 C CNN
-F 3 "~" H 2950 4350 50  0001 C CNN
-F 4 "1276-6455-1-ND" H 2950 4350 50  0001 C CNN "Digikey Part Number"
-	1    2950 4350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C1
-U 1 1 5FBBE5D4
-P 1450 4350
-F 0 "C1" H 1565 4396 50  0000 L CNN
-F 1 "10u" H 1565 4305 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1488 4200 50  0001 C CNN
-F 3 "~" H 1450 4350 50  0001 C CNN
-F 4 "1276-6460-1-ND" H 1450 4350 50  0001 C CNN "Digikey Part Number"
-	1    1450 4350
+L props-control-board:STM32F042K6T6 U4
+U 1 1 5FB9596A
+P 3750 5500
+F 0 "U4" H 3750 6500 50  0000 C CNN
+F 1 "STM32F042K6T6" H 4000 6400 50  0000 C CNN
+F 2 "Package_QFP:LQFP-32_7x7mm_P0.8mm" H 3800 6450 50  0001 C CNN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/52/ad/d0/80/e6/be/40/ad/DM00105814.pdf/files/DM00105814.pdf/jcr:content/translations/en.DM00105814.pdf" H 3800 6450 50  0001 C CNN
+F 4 "497-14647-ND" H 3750 5500 50  0001 C CNN "Digikey Part Number"
+	1    3750 5500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1459,224 +1087,612 @@ F 4 "AZ1117CH-3.3TRG1DICT-ND" H 2100 4200 50  0001 C CNN "Digikey Part Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L props-control-board:STM32F042K6T6 U4
-U 1 1 5FB9596A
-P 3750 5500
-F 0 "U4" H 3750 6500 50  0000 C CNN
-F 1 "STM32F042K6T6" H 4000 6400 50  0000 C CNN
-F 2 "Package_QFP:LQFP-32_7x7mm_P0.8mm" H 3800 6450 50  0001 C CNN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/52/ad/d0/80/e6/be/40/ad/DM00105814.pdf/files/DM00105814.pdf/jcr:content/translations/en.DM00105814.pdf" H 3800 6450 50  0001 C CNN
-F 4 "497-14647-ND" H 3750 5500 50  0001 C CNN "Digikey Part Number"
-	1    3750 5500
+L Device:C C1
+U 1 1 5FBBE5D4
+P 1450 4350
+F 0 "C1" H 1565 4396 50  0000 L CNN
+F 1 "10u" H 1565 4305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1488 4200 50  0001 C CNN
+F 3 "~" H 1450 4350 50  0001 C CNN
+F 4 "1276-6460-1-ND" H 1450 4350 50  0001 C CNN "Digikey Part Number"
+	1    1450 4350
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x03_Female J2
-U 1 1 5FB800EE
-P 1100 1800
-F 0 "J2" H 992 1475 50  0000 C CNN
-F 1 "Conn_01x03_Female" H 992 1566 50  0000 C CNN
-F 2 "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical" H 1100 1800 50  0001 C CNN
-F 3 "~" H 1100 1800 50  0001 C CNN
-	1    1100 1800
-	-1   0    0    1   
+L Device:C C4
+U 1 1 5FBBE5DA
+P 2950 4350
+F 0 "C4" H 3065 4396 50  0000 L CNN
+F 1 "22u" H 3065 4305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2988 4200 50  0001 C CNN
+F 3 "~" H 2950 4350 50  0001 C CNN
+F 4 "1276-6455-1-ND" H 2950 4350 50  0001 C CNN "Digikey Part Number"
+	1    2950 4350
+	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x03_Female J3
-U 1 1 5FB75D0A
-P 1100 2600
-F 0 "J3" H 992 2275 50  0000 C CNN
-F 1 "Conn_01x03_Female" H 992 2366 50  0000 C CNN
-F 2 "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical" H 1100 2600 50  0001 C CNN
-F 3 "~" H 1100 2600 50  0001 C CNN
-	1    1100 2600
-	-1   0    0    1   
+L Device:L L1
+U 1 1 5FBBE5F6
+P 2700 4200
+F 0 "L1" V 2890 4200 50  0000 C CNN
+F 1 "100u" V 2799 4200 50  0000 C CNN
+F 2 "Inductor_SMD:L_TDK_SLF7045" H 2700 4200 50  0001 C CNN
+F 3 "~" H 2700 4200 50  0001 C CNN
+F 4 "445-2015-1-ND" H 2700 4200 50  0001 C CNN "Digikey Part Number"
+	1    2700 4200
+	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C C8
-U 1 1 5FB66124
-P 6100 6800
-F 0 "C8" V 5848 6800 50  0000 C CNN
-F 1 "100n" V 5939 6800 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6138 6650 50  0001 C CNN
-F 3 "~" H 6100 6800 50  0001 C CNN
-F 4 "1276-CL10B104KB8NNNLCT-ND" H 6100 6800 50  0001 C CNN "Digikey Part Number"
-	1    6100 6800
+L Device:C C9
+U 1 1 5FBF5E6E
+P 6200 4500
+F 0 "C9" H 6315 4546 50  0000 L CNN
+F 1 "10n" H 6315 4455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6238 4350 50  0001 C CNN
+F 3 "~" H 6200 4500 50  0001 C CNN
+F 4 "1276-1009-1-ND" H 6200 4500 50  0001 C CNN "Digikey Part Number"
+	1    6200 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 5FBF65D1
+P 5800 4500
+F 0 "C7" H 5915 4546 50  0000 L CNN
+F 1 "100n" H 5915 4455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5838 4350 50  0001 C CNN
+F 3 "~" H 5800 4500 50  0001 C CNN
+F 4 "1276-CL10B104KB8NNNLCT-ND" H 5800 4500 50  0001 C CNN "Digikey Part Number"
+	1    5800 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 5FBF7495
+P 5400 4500
+F 0 "C6" H 5515 4546 50  0000 L CNN
+F 1 "100n" H 5515 4455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5438 4350 50  0001 C CNN
+F 3 "~" H 5400 4500 50  0001 C CNN
+F 4 "1276-CL10B104KB8NNNLCT-ND" H 5400 4500 50  0001 C CNN "Digikey Part Number"
+	1    5400 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C11
+U 1 1 5FC00DD5
+P 6600 4500
+F 0 "C11" H 6715 4546 50  0000 L CNN
+F 1 "4.7u" H 6715 4455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6638 4350 50  0001 C CNN
+F 3 "~" H 6600 4500 50  0001 C CNN
+F 4 "1276-1044-1-ND" H 6600 4500 50  0001 C CNN "Digikey Part Number"
+	1    6600 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C12
+U 1 1 5FC02449
+P 7000 4500
+F 0 "C12" H 7115 4546 50  0000 L CNN
+F 1 "1u" H 7115 4455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7038 4350 50  0001 C CNN
+F 3 "~" H 7000 4500 50  0001 C CNN
+F 4 "1276-1034-1-ND" H 7000 4500 50  0001 C CNN "Digikey Part Number"
+	1    7000 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal_GND24 Y1
+U 1 1 5FC23711
+P 2050 6600
+F 0 "Y1" V 2004 6844 50  0000 L CNN
+F 1 "Crystal_GND24" V 2095 6844 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm_HandSoldering" H 2050 6600 50  0001 C CNN
+F 3 "~" H 2050 6600 50  0001 C CNN
+F 4 "SER4069CT-ND" H 2050 6600 50  0001 C CNN "Digikey Part Number"
+	1    2050 6600
 	0    1    1    0   
 $EndComp
 $Comp
-L props-control-board:SX1278_module U8
-U 1 1 5FB4A5F0
-P 6400 5850
-F 0 "U8" H 6500 6500 50  0000 C CNN
-F 1 "SX1278_module" H 6750 6400 50  0000 C CNN
-F 2 "props-control-board:SX1278_module" H 6400 5850 50  0001 C CNN
-F 3 "" H 6400 5850 50  0001 C CNN
-	1    6400 5850
-	1    0    0    -1  
-$EndComp
-Text Label 3650 1550 0    50   ~ 0
-D3
-Text Label 3650 1450 0    50   ~ 0
-D2
-Text Label 3650 1350 0    50   ~ 0
-RX
-Wire Wire Line
-	4250 1850 4500 1850
-Wire Wire Line
-	4150 1750 4500 1750
-Wire Wire Line
-	4050 1650 4500 1650
-Wire Wire Line
-	4500 1950 4400 1950
-$Comp
-L power:GND #PWR015
-U 1 1 5FF870AF
-P 4400 1950
-F 0 "#PWR015" H 4400 1700 50  0001 C CNN
-F 1 "GND" H 4405 1777 50  0000 C CNN
-F 2 "" H 4400 1950 50  0001 C CNN
-F 3 "" H 4400 1950 50  0001 C CNN
-	1    4400 1950
-	1    0    0    -1  
+L Device:C C3
+U 1 1 5FC2AAA8
+P 1550 6850
+F 0 "C3" V 1298 6850 50  0000 C CNN
+F 1 "20p" V 1389 6850 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1588 6700 50  0001 C CNN
+F 3 "~" H 1550 6850 50  0001 C CNN
+F 4 "1276-1829-1-ND" H 1550 6850 50  0001 C CNN "Digikey Part Number"
+	1    1550 6850
+	0    1    1    0   
 $EndComp
 $Comp
-L Regulator_Linear:AZ1117-3.3 U7
-U 1 1 5FB4D2B8
-P 5750 1000
-F 0 "U7" H 5750 1242 50  0000 C CNN
-F 1 "AZ1117-3.3" H 5750 1151 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 5750 1250 50  0001 C CIN
-F 3 "https://www.diodes.com/assets/Datasheets/AZ1117.pdf" H 5750 1000 50  0001 C CNN
-F 4 "AZ1117CH-3.3TRG1DICT-ND" H 5750 1000 50  0001 C CNN "Digikey Part Number"
-	1    5750 1000
+L Device:C C2
+U 1 1 5FC2BDD5
+P 1550 6350
+F 0 "C2" V 1298 6350 50  0000 C CNN
+F 1 "20p" V 1389 6350 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1588 6200 50  0001 C CNN
+F 3 "~" H 1550 6350 50  0001 C CNN
+F 4 "1276-1829-1-ND" H 1550 6350 50  0001 C CNN "Digikey Part Number"
+	1    1550 6350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 5FC6DFEB
+P 9300 6100
+F 0 "R12" H 9370 6146 50  0000 L CNN
+F 1 "10K" H 9370 6055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9230 6100 50  0001 C CNN
+F 3 "~" H 9300 6100 50  0001 C CNN
+F 4 "RNCP0805FTD10K0CT-ND" H 9300 6100 50  0001 C CNN "Digikey Part Number"
+	1    9300 6100
 	1    0    0    -1  
 $EndComp
-Text GLabel 4800 1000 0    50   Input ~ 0
-5V
-Wire Wire Line
-	4800 1000 5100 1000
-Wire Wire Line
-	5100 1000 5450 1000
-Wire Wire Line
-	6600 1000 7050 1000
-Connection ~ 6600 1000
-Wire Wire Line
-	6500 1000 6600 1000
-Wire Wire Line
-	6050 1000 6200 1000
 $Comp
-L Device:L L2
-U 1 1 5FB4FD00
-P 6350 1000
-F 0 "L2" V 6540 1000 50  0000 C CNN
-F 1 "100u" V 6449 1000 50  0000 C CNN
-F 2 "Inductor_SMD:L_TDK_SLF7045" H 6350 1000 50  0001 C CNN
-F 3 "~" H 6350 1000 50  0001 C CNN
-F 4 "445-2015-1-ND" H 6350 1000 50  0001 C CNN "Digikey Part Number"
-	1    6350 1000
+L Connector:Conn_01x02_Female J8
+U 1 1 5FCE2713
+P 7450 3700
+F 0 "J8" H 7478 3676 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 7478 3585 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 7450 3700 50  0001 C CNN
+F 3 "~" H 7450 3700 50  0001 C CNN
+	1    7450 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L props-control-board:VOS628A U2
+U 1 1 5FCF1438
+P 2300 5850
+F 0 "U2" H 2300 6117 50  0000 C CNN
+F 1 "VOS628A" H 2300 6026 50  0000 C CNN
+F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 2300 5850 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/83466/vos628a.pdf" H 2300 5850 50  0001 C CNN
+F 4 "VOS628A-X001TCT-ND" H 2300 5850 50  0001 C CNN "Digikey Part Number"
+	1    2300 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5FD02EAB
+P 2750 5400
+F 0 "R3" H 2820 5446 50  0000 L CNN
+F 1 "10K" H 2820 5355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2680 5400 50  0001 C CNN
+F 3 "~" H 2750 5400 50  0001 C CNN
+F 4 "RNCP0805FTD10K0CT-ND" H 2750 5400 50  0001 C CNN "Digikey Part Number"
+	1    2750 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5FD1B6D0
+P 1500 5500
+F 0 "R1" V 1707 5500 50  0000 C CNN
+F 1 "4K7" V 1616 5500 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 1430 5500 50  0001 C CNN
+F 3 "~" H 1500 5500 50  0001 C CNN
+F 4 "RMCF1206JT4K70CT-ND" H 1500 5500 50  0001 C CNN "Digikey Part Number"
+	1    1500 5500
 	0    -1   -1   0   
 $EndComp
-Text GLabel 7050 1000 2    50   Input ~ 0
-3V3
-Connection ~ 5100 1000
 $Comp
-L power:GND #PWR016
-U 1 1 5FB5272F
-P 5100 1300
-F 0 "#PWR016" H 5100 1050 50  0001 C CNN
-F 1 "GND" H 5105 1127 50  0000 C CNN
-F 2 "" H 5100 1300 50  0001 C CNN
-F 3 "" H 5100 1300 50  0001 C CNN
-	1    5100 1300
+L Device:R R2
+U 1 1 5FD24A9B
+P 1500 5950
+F 0 "R2" V 1707 5950 50  0000 C CNN
+F 1 "4K7" V 1616 5950 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 1430 5950 50  0001 C CNN
+F 3 "~" H 1500 5950 50  0001 C CNN
+F 4 "RMCF1206JT4K70CT-ND" H 1500 5950 50  0001 C CNN "Digikey Part Number"
+	1    1500 5950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J12
+U 1 1 5FCD0AC2
+P 10200 6050
+F 0 "J12" H 10228 6026 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 10228 5935 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 10200 6050 50  0001 C CNN
+F 3 "~" H 10200 6050 50  0001 C CNN
+	1    10200 6050
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR020
-U 1 1 5FB5252A
-P 6600 1300
-F 0 "#PWR020" H 6600 1050 50  0001 C CNN
-F 1 "GND" H 6605 1127 50  0000 C CNN
-F 2 "" H 6600 1300 50  0001 C CNN
-F 3 "" H 6600 1300 50  0001 C CNN
-	1    6600 1300
+L Transistor_FET:DMN24H3D5L Q8
+U 1 1 5FC52CC6
+P 9600 5850
+F 0 "Q8" H 9805 5804 50  0000 L CNN
+F 1 "DMN24H3D5L" H 9805 5895 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9800 5775 50  0001 L CIN
+F 3 "http://www.diodes.com/assets/Datasheets/DMN24H3D5L.pdf" H 9600 5850 50  0001 L CNN
+F 4 "DMN24H3D5L-7DICT-ND" H 9600 5850 50  0001 C CNN "Digikey Part Number"
+	1    9600 5850
+	1    0    0    1   
+$EndComp
+$Comp
+L Transistor_FET:DMN24H3D5L Q7
+U 1 1 5FC1EAB0
+P 9600 5400
+F 0 "Q7" H 9805 5446 50  0000 L CNN
+F 1 "DMN24H3D5L" H 9805 5355 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9800 5325 50  0001 L CIN
+F 3 "http://www.diodes.com/assets/Datasheets/DMN24H3D5L.pdf" H 9600 5400 50  0001 L CNN
+F 4 "DMN24H3D5L-7DICT-ND" H 9600 5400 50  0001 C CNN "Digikey Part Number"
+	1    9600 5400
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR018
-U 1 1 5FB50EBF
-P 5750 1300
-F 0 "#PWR018" H 5750 1050 50  0001 C CNN
-F 1 "GND" H 5755 1127 50  0000 C CNN
-F 2 "" H 5750 1300 50  0001 C CNN
-F 3 "" H 5750 1300 50  0001 C CNN
-	1    5750 1300
+L Device:R R11
+U 1 1 5FD6D225
+P 9300 4750
+F 0 "R11" H 9370 4796 50  0000 L CNN
+F 1 "10K" H 9370 4705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9230 4750 50  0001 C CNN
+F 3 "~" H 9300 4750 50  0001 C CNN
+F 4 "RNCP0805FTD10K0CT-ND" H 9300 4750 50  0001 C CNN "Digikey Part Number"
+	1    9300 4750
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C10
-U 1 1 5FB4F003
-P 6600 1150
-F 0 "C10" H 6715 1196 50  0000 L CNN
-F 1 "22u" H 6715 1105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6638 1000 50  0001 C CNN
-F 3 "~" H 6600 1150 50  0001 C CNN
-F 4 "1276-6455-1-ND" H 6600 1150 50  0001 C CNN "Digikey Part Number"
-	1    6600 1150
+L Connector:Conn_01x02_Female J11
+U 1 1 5FD6D233
+P 10200 4700
+F 0 "J11" H 10228 4676 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 10228 4585 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 10200 4700 50  0001 C CNN
+F 3 "~" H 10200 4700 50  0001 C CNN
+	1    10200 4700
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C5
-U 1 1 5FB4E123
-P 5100 1150
-F 0 "C5" H 5215 1196 50  0000 L CNN
-F 1 "10u" H 5215 1105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5138 1000 50  0001 C CNN
-F 3 "~" H 5100 1150 50  0001 C CNN
-F 4 "1276-6460-1-ND" H 5100 1150 50  0001 C CNN "Digikey Part Number"
-	1    5100 1150
-	1    0    0    -1  
+L Transistor_FET:DMN24H3D5L Q6
+U 1 1 5FD6D242
+P 9600 4500
+F 0 "Q6" H 9805 4454 50  0000 L CNN
+F 1 "DMN24H3D5L" H 9805 4545 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9800 4425 50  0001 L CIN
+F 3 "http://www.diodes.com/assets/Datasheets/DMN24H3D5L.pdf" H 9600 4500 50  0001 L CNN
+F 4 "DMN24H3D5L-7DICT-ND" H 9600 4500 50  0001 C CNN "Digikey Part Number"
+	1    9600 4500
+	1    0    0    1   
 $EndComp
-Wire Wire Line
-	4250 2550 4950 2550
-Wire Wire Line
-	3650 2550 4250 2550
-Connection ~ 4250 2550
-Wire Wire Line
-	4250 2550 4250 1850
-Wire Wire Line
-	4150 2450 4950 2450
-Wire Wire Line
-	3650 2450 4150 2450
-Connection ~ 4150 2450
-Wire Wire Line
-	4150 2450 4150 1750
-Wire Wire Line
-	4050 2350 4950 2350
-Wire Wire Line
-	3650 2350 4050 2350
-Connection ~ 4050 2350
-Wire Wire Line
-	4050 2350 4050 1650
-Wire Wire Line
-	3950 1650 3650 1650
-Wire Wire Line
-	3950 1550 3950 1650
-Wire Wire Line
-	4500 1550 3950 1550
 $Comp
-L Connector:Conn_01x06_Female J5
-U 1 1 5FF8456E
-P 4700 1650
-F 0 "J5" H 4728 1626 50  0000 L CNN
-F 1 "Conn_01x06_Female" H 4728 1535 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_B6B-XH-A_1x06_P2.50mm_Vertical" H 4700 1650 50  0001 C CNN
-F 3 "~" H 4700 1650 50  0001 C CNN
-	1    4700 1650
+L Transistor_FET:DMN24H3D5L Q5
+U 1 1 5FD6D248
+P 9600 4050
+F 0 "Q5" H 9805 4096 50  0000 L CNN
+F 1 "DMN24H3D5L" H 9805 4005 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9800 3975 50  0001 L CIN
+F 3 "http://www.diodes.com/assets/Datasheets/DMN24H3D5L.pdf" H 9600 4050 50  0001 L CNN
+F 4 "DMN24H3D5L-7DICT-ND" H 9600 4050 50  0001 C CNN "Digikey Part Number"
+	1    9600 4050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4100 1450 4500 1450
-Text GLabel 4100 1450 0    50   Input ~ 0
-5V
+$Comp
+L Device:R R8
+U 1 1 5FDB58CA
+P 7700 4950
+F 0 "R8" V 7493 4950 50  0000 C CNN
+F 1 "150" V 7584 4950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7630 4950 50  0001 C CNN
+F 3 "~" H 7700 4950 50  0001 C CNN
+F 4 "RMCF0805JT150RCT-ND" H 7700 4950 50  0001 C CNN "Digikey Part Number"
+	1    7700 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5FDB49EE
+P 7700 4550
+F 0 "R7" V 7493 4550 50  0000 C CNN
+F 1 "150" V 7584 4550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7630 4550 50  0001 C CNN
+F 3 "~" H 7700 4550 50  0001 C CNN
+F 4 "RMCF0805JT150RCT-ND" H 7700 4550 50  0001 C CNN "Digikey Part Number"
+	1    7700 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x04_Female J7
+U 1 1 5FE3AB49
+P 7400 3100
+F 0 "J7" H 7428 3076 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 7428 2985 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7400 3100 50  0001 C CNN
+F 3 "~" H 7400 3100 50  0001 C CNN
+	1    7400 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 5FE9417B
+P 9300 3200
+F 0 "R10" H 9370 3246 50  0000 L CNN
+F 1 "10K" H 9370 3155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9230 3200 50  0001 C CNN
+F 3 "~" H 9300 3200 50  0001 C CNN
+F 4 "RNCP0805FTD10K0CT-ND" H 9300 3200 50  0001 C CNN "Digikey Part Number"
+	1    9300 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J10
+U 1 1 5FE9418F
+P 10200 3150
+F 0 "J10" H 10228 3126 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 10228 3035 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 10200 3150 50  0001 C CNN
+F 3 "~" H 10200 3150 50  0001 C CNN
+	1    10200 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:DMN24H3D5L Q4
+U 1 1 5FE9419E
+P 9600 2950
+F 0 "Q4" H 9805 2904 50  0000 L CNN
+F 1 "DMN24H3D5L" H 9805 2995 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9800 2875 50  0001 L CIN
+F 3 "http://www.diodes.com/assets/Datasheets/DMN24H3D5L.pdf" H 9600 2950 50  0001 L CNN
+F 4 "DMN24H3D5L-7DICT-ND" H 9600 2950 50  0001 C CNN "Digikey Part Number"
+	1    9600 2950
+	1    0    0    1   
+$EndComp
+$Comp
+L Transistor_FET:DMN24H3D5L Q3
+U 1 1 5FE941A4
+P 9600 2500
+F 0 "Q3" H 9805 2546 50  0000 L CNN
+F 1 "DMN24H3D5L" H 9805 2455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9800 2425 50  0001 L CIN
+F 3 "http://www.diodes.com/assets/Datasheets/DMN24H3D5L.pdf" H 9600 2500 50  0001 L CNN
+F 4 "DMN24H3D5L-7DICT-ND" H 9600 2500 50  0001 C CNN "Digikey Part Number"
+	1    9600 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5FE941AA
+P 9300 1850
+F 0 "R9" H 9370 1896 50  0000 L CNN
+F 1 "10K" H 9370 1805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9230 1850 50  0001 C CNN
+F 3 "~" H 9300 1850 50  0001 C CNN
+F 4 "RNCP0805FTD10K0CT-ND" H 9300 1850 50  0001 C CNN "Digikey Part Number"
+	1    9300 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J9
+U 1 1 5FE941B5
+P 10200 1800
+F 0 "J9" H 10228 1776 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 10228 1685 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 10200 1800 50  0001 C CNN
+F 3 "~" H 10200 1800 50  0001 C CNN
+	1    10200 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:DMN24H3D5L Q2
+U 1 1 5FE941C4
+P 9600 1600
+F 0 "Q2" H 9805 1554 50  0000 L CNN
+F 1 "DMN24H3D5L" H 9805 1645 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9800 1525 50  0001 L CIN
+F 3 "http://www.diodes.com/assets/Datasheets/DMN24H3D5L.pdf" H 9600 1600 50  0001 L CNN
+F 4 "DMN24H3D5L-7DICT-ND" H 9600 1600 50  0001 C CNN "Digikey Part Number"
+	1    9600 1600
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5FE941EE
+P 7700 1650
+F 0 "R5" V 7493 1650 50  0000 C CNN
+F 1 "150" V 7584 1650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7630 1650 50  0001 C CNN
+F 3 "~" H 7700 1650 50  0001 C CNN
+F 4 "RMCF0805JT150RCT-ND" H 7700 1650 50  0001 C CNN "Digikey Part Number"
+	1    7700 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L props-control-board:ADG3304 U6
+U 1 1 5FB5A7D9
+P 5400 2300
+F 0 "U6" H 5400 2617 50  0000 C CNN
+F 1 "TXB0104PWR" H 5400 2526 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 5350 2850 50  0001 C CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftxb0104" H 5350 2850 50  0001 C CNN
+F 4 "296-21929-1-ND" H 5400 2300 50  0001 C CNN "Digikey Part Number"
+	1    5400 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L props-control-board:ADG3301 U5
+U 1 1 5FC835E0
+P 4350 3500
+F 0 "U5" H 4300 3917 50  0000 C CNN
+F 1 "TXB0101DCKT" H 4300 3826 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering" H 4350 3500 50  0001 C CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftxb0101" H 4350 3500 50  0001 C CNN
+F 4 "296-32599-1-ND" H 4350 3500 50  0001 C CNN "Digikey Part Number"
+	1    4350 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L props-control-board:arduino_pro_mini U3
+U 1 1 5FB4582A
+P 3000 1550
+F 0 "U3" H 3000 2250 50  0000 C CNN
+F 1 "arduino_pro_mini" H 3250 2150 50  0000 C CNN
+F 2 "props-control-board:pro_mini" H 2700 2150 50  0001 C CNN
+F 3 "" H 2700 2150 50  0001 C CNN
+	1    3000 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x05_Female J6
+U 1 1 5FF1DA69
+P 7400 2550
+F 0 "J6" H 7428 2576 50  0000 L CNN
+F 1 "Conn_01x05_Female" H 7428 2485 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical" H 7400 2550 50  0001 C CNN
+F 3 "~" H 7400 2550 50  0001 C CNN
+	1    7400 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J4
+U 1 1 5FF2AE38
+P 1100 3400
+F 0 "J4" H 992 3075 50  0000 C CNN
+F 1 "Conn_01x03_Female" H 992 3166 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical" H 1100 3400 50  0001 C CNN
+F 3 "~" H 1100 3400 50  0001 C CNN
+	1    1100 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 600386E3
+P 4900 4700
+F 0 "R4" H 4970 4746 50  0000 L CNN
+F 1 "10K" H 4970 4655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4830 4700 50  0001 C CNN
+F 3 "~" H 4900 4700 50  0001 C CNN
+F 4 "RNCP0805FTD10K0CT-ND" H 4900 4700 50  0001 C CNN "Digikey Part Number"
+	1    4900 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 600CFA01
+P 6050 3850
+F 0 "H4" H 6150 3896 50  0000 L CNN
+F 1 "MountingHole" H 6150 3805 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6050 3850 50  0001 C CNN
+F 3 "~" H 6050 3850 50  0001 C CNN
+	1    6050 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 600D0D7A
+P 6050 3650
+F 0 "H3" H 6150 3696 50  0000 L CNN
+F 1 "MountingHole" H 6150 3605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6050 3650 50  0001 C CNN
+F 3 "~" H 6050 3650 50  0001 C CNN
+	1    6050 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 600DAC3D
+P 6050 3450
+F 0 "H2" H 6150 3496 50  0000 L CNN
+F 1 "MountingHole" H 6150 3405 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6050 3450 50  0001 C CNN
+F 3 "~" H 6050 3450 50  0001 C CNN
+	1    6050 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 600E4AD1
+P 6050 3250
+F 0 "H1" H 6150 3296 50  0000 L CNN
+F 1 "MountingHole" H 6150 3205 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 6050 3250 50  0001 C CNN
+F 3 "~" H 6050 3250 50  0001 C CNN
+	1    6050 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:DMN24H3D5L Q1
+U 1 1 5FE941CA
+P 9600 1150
+F 0 "Q1" H 9805 1196 50  0000 L CNN
+F 1 "DMN24H3D5L" H 9805 1105 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9800 1075 50  0001 L CIN
+F 3 "http://www.diodes.com/assets/Datasheets/DMN24H3D5L.pdf" H 9600 1150 50  0001 L CNN
+F 4 "DMN24H3D5L-7DICT-ND" H 9600 1150 50  0001 C CNN "Digikey Part Number"
+	1    9600 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J13
+U 1 1 6012C42A
+P 2750 3450
+F 0 "J13" H 2778 3426 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 2778 3335 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 2750 3450 50  0001 C CNN
+F 3 "~" H 2750 3450 50  0001 C CNN
+	1    2750 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5FE941E5
+P 7700 2050
+F 0 "R6" V 7493 2050 50  0000 C CNN
+F 1 "150" V 7584 2050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7630 2050 50  0001 C CNN
+F 3 "~" H 7700 2050 50  0001 C CNN
+F 4 "RMCF0805JT150RCT-ND" H 7700 2050 50  0001 C CNN "Digikey Part Number"
+	1    7700 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x04_Female J1
+U 1 1 604E01D9
+P 1100 1000
+F 0 "J1" H 1128 976 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 1128 885 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 1100 1000 50  0001 C CNN
+F 3 "~" H 1100 1000 50  0001 C CNN
+	1    1100 1000
+	-1   0    0    1   
+$EndComp
+$Comp
+L props-control-board:RFM-0505S U11
+U 1 1 5FCC7831
+P 7700 5650
+F 0 "U11" H 8028 5588 50  0000 L CNN
+F 1 "RFM-0505S" H 8028 5497 50  0000 L CNN
+F 2 "props-control-board:RFM-0505S" H 7700 5900 50  0001 C CNN
+F 3 "https://www.recom-power.com/pdf/Econoline/RFM.pdf" H 7700 5900 50  0001 C CNN
+F 4 "945-3159-ND" H 7700 5650 50  0001 C CNN "Digikey Part Number"
+	1    7700 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L props-control-board:HCPL2631SD U9
+U 1 1 5FE94181
+P 8450 2100
+F 0 "U9" H 8450 2667 50  0000 C CNN
+F 1 "HCPL2631SD" H 8450 2576 50  0000 C CNN
+F 2 "Package_SO:SSO-8_6.7x9.8mm_P2.54mm_Clearance8mm" H 8450 2100 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/HCPL2631-D.PDF" H 8450 2100 50  0001 C CNN
+F 4 "HCPL2631SDCT-ND" H 8450 2100 50  0001 C CNN "Digikey Part Number"
+	1    8450 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L props-control-board:HCPL2631SD U10
+U 1 1 5FD4EE54
+P 8450 5000
+F 0 "U10" H 8450 5567 50  0000 C CNN
+F 1 "HCPL2631SD" H 8450 5476 50  0000 C CNN
+F 2 "Package_SO:SSO-8_6.7x9.8mm_P2.54mm_Clearance8mm" H 8450 5000 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/HCPL2631-D.PDF" H 8450 5000 50  0001 C CNN
+F 4 "HCPL2631SDCT-ND" H 8450 5000 50  0001 C CNN "Digikey Part Number"
+	1    8450 5000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
