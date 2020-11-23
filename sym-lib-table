@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name props-control-board)(type Legacy)(uri ${KIPRJMOD}/props-control-board.lib)(options "")(descr ""))
+)

@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name props-control-board)(type KiCad)(uri ${KIPRJMOD}/props-control-board.pretty)(options "")(descr ""))
+)
