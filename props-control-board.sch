@@ -17,34 +17,34 @@ Text GLabel 5550 3050 2    50   Input ~ 0
 5V
 Text GLabel 6100 2250 2    50   Input ~ 0
 3V3
-Text GLabel 6000 5150 0    50   Input ~ 0
+Text GLabel 5500 5100 0    50   Input ~ 0
 3V3
 Wire Wire Line
-	6000 5150 6250 5150
+	5500 5100 5750 5100
 Wire Wire Line
-	6250 5150 6250 5350
+	5750 5100 5750 5300
 $Comp
 L power:GND #PWR019
 U 1 1 5FB64920
-P 6400 7000
-F 0 "#PWR019" H 6400 6750 50  0001 C CNN
-F 1 "GND" H 6405 6827 50  0000 C CNN
-F 2 "" H 6400 7000 50  0001 C CNN
-F 3 "" H 6400 7000 50  0001 C CNN
-	1    6400 7000
+P 5900 6950
+F 0 "#PWR019" H 5900 6700 50  0001 C CNN
+F 1 "GND" H 5905 6777 50  0000 C CNN
+F 2 "" H 5900 6950 50  0001 C CNN
+F 3 "" H 5900 6950 50  0001 C CNN
+	1    5900 6950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6400 6800 6400 6500
-Text GLabel 5700 6800 0    50   Input ~ 0
+	5900 6750 5900 6450
+Text GLabel 5200 6750 0    50   Input ~ 0
 3V3
 Wire Wire Line
-	5700 6800 5950 6800
+	5200 6750 5450 6750
 Wire Wire Line
-	6250 6800 6400 6800
+	5750 6750 5900 6750
 Wire Wire Line
-	6400 6800 6400 7000
-Connection ~ 6400 6800
+	5900 6750 5900 6950
+Connection ~ 5900 6750
 Text GLabel 1650 800  2    50   Input ~ 0
 5V
 Wire Wire Line
@@ -334,13 +334,13 @@ Text Label 5850 2650 0    50   ~ 0
 LORA_SS
 Text GLabel 5000 3350 2    50   Input ~ 0
 3V3
-Text Label 5800 5600 2    50   ~ 0
+Text Label 5300 5550 2    50   ~ 0
 MOSI
-Text Label 5800 5700 2    50   ~ 0
+Text Label 5300 5650 2    50   ~ 0
 MISO
-Text Label 5800 5800 2    50   ~ 0
+Text Label 5300 5750 2    50   ~ 0
 SCK
-Text Label 5800 5900 2    50   ~ 0
+Text Label 5300 5850 2    50   ~ 0
 LORA_SS
 Text Label 4400 6350 0    50   ~ 0
 SWDIO
@@ -707,29 +707,29 @@ D9
 Text Label 1300 900  0    50   ~ 0
 D9
 Wire Wire Line
-	7600 6300 7600 6000
-Text GLabel 7600 6300 3    50   Input ~ 0
+	7350 6100 7350 5800
+Text GLabel 7350 6100 3    50   Input ~ 0
 5V
 $Comp
 L power:GND #PWR026
 U 1 1 5FCEB723
-P 7400 6200
-F 0 "#PWR026" H 7400 5950 50  0001 C CNN
-F 1 "GND" H 7405 6027 50  0000 C CNN
-F 2 "" H 7400 6200 50  0001 C CNN
-F 3 "" H 7400 6200 50  0001 C CNN
-	1    7400 6200
+P 7150 6000
+F 0 "#PWR026" H 7150 5750 50  0001 C CNN
+F 1 "GND" H 7155 5827 50  0000 C CNN
+F 2 "" H 7150 6000 50  0001 C CNN
+F 3 "" H 7150 6000 50  0001 C CNN
+	1    7150 6000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7400 6100 7400 6200
+	7150 5900 7150 6000
 Wire Wire Line
-	7500 6000 7500 6100
+	7250 5800 7250 5900
 Wire Wire Line
-	7500 6100 7400 6100
-Text Label 7800 6000 3    50   ~ 0
+	7250 5900 7150 5900
+Text Label 7550 5800 3    50   ~ 0
 ISOL_GND
-Text Label 7900 6000 3    50   ~ 0
+Text Label 7650 5800 3    50   ~ 0
 ISOL_5V
 Text Label 9100 6350 2    50   ~ 0
 ISOL_GND
@@ -1020,24 +1020,24 @@ $EndComp
 $Comp
 L props-control-board:SX1278_module U8
 U 1 1 5FB4A5F0
-P 6400 5850
-F 0 "U8" H 6500 6500 50  0000 C CNN
-F 1 "SX1278_module" H 6750 6400 50  0000 C CNN
-F 2 "props-control-board:SX1278_module" H 6400 5850 50  0001 C CNN
-F 3 "" H 6400 5850 50  0001 C CNN
-	1    6400 5850
+P 5900 5800
+F 0 "U8" H 6000 6450 50  0000 C CNN
+F 1 "SX1278_module" H 6250 6350 50  0000 C CNN
+F 2 "props-control-board:SX1278_module" H 5900 5800 50  0001 C CNN
+F 3 "" H 5900 5800 50  0001 C CNN
+	1    5900 5800
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C8
 U 1 1 5FB66124
-P 6100 6800
-F 0 "C8" V 5848 6800 50  0000 C CNN
-F 1 "100n" V 5939 6800 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6138 6650 50  0001 C CNN
-F 3 "~" H 6100 6800 50  0001 C CNN
-F 4 "1276-CL10B104KB8NNNLCT-ND" H 6100 6800 50  0001 C CNN "Digikey Part Number"
-	1    6100 6800
+P 5600 6750
+F 0 "C8" V 5348 6750 50  0000 C CNN
+F 1 "100n" V 5439 6750 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5638 6600 50  0001 C CNN
+F 3 "~" H 5600 6750 50  0001 C CNN
+F 4 "1276-CL10B104KB8NNNLCT-ND" H 5600 6750 50  0001 C CNN "Digikey Part Number"
+	1    5600 6750
 	0    1    1    0   
 $EndComp
 $Comp
@@ -1662,13 +1662,13 @@ $EndComp
 $Comp
 L props-control-board:RFM-0505S U11
 U 1 1 5FCC7831
-P 7700 5650
-F 0 "U11" H 8028 5588 50  0000 L CNN
-F 1 "RFM-0505S" H 8028 5497 50  0000 L CNN
-F 2 "props-control-board:RFM-0505S" H 7700 5900 50  0001 C CNN
-F 3 "https://www.recom-power.com/pdf/Econoline/RFM.pdf" H 7700 5900 50  0001 C CNN
-F 4 "945-3159-ND" H 7700 5650 50  0001 C CNN "Digikey Part Number"
-	1    7700 5650
+P 7450 5450
+F 0 "U11" H 7778 5388 50  0000 L CNN
+F 1 "RFM-0505S" H 7778 5297 50  0000 L CNN
+F 2 "props-control-board:RFM-0505S" H 7450 5700 50  0001 C CNN
+F 3 "https://www.recom-power.com/pdf/Econoline/RFM.pdf" H 7450 5700 50  0001 C CNN
+F 4 "945-3159-ND" H 7450 5450 50  0001 C CNN "Digikey Part Number"
+	1    7450 5450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1695,4 +1695,34 @@ F 4 "HCPL2631SDCT-ND" H 8450 5000 50  0001 C CNN "Digikey Part Number"
 	1    8450 5000
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:Conn_Coaxial_x2_Isolated J?
+U 1 1 5FECB519
+P 6800 6250
+F 0 "J?" H 6900 6225 50  0000 L CNN
+F 1 "Conn_Coaxial_x2_Isolated" H 6900 6134 50  0000 L CNN
+F 2 "Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical" H 6800 6250 50  0001 C CNN
+F 3 " ~" H 6800 6250 50  0001 C CNN
+	1    6800 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 6250 6600 6250
+$Comp
+L power:GND #PWR?
+U 1 1 5FF0C274
+P 6800 6550
+F 0 "#PWR?" H 6800 6300 50  0001 C CNN
+F 1 "GND" H 6805 6377 50  0000 C CNN
+F 2 "" H 6800 6550 50  0001 C CNN
+F 3 "" H 6800 6550 50  0001 C CNN
+	1    6800 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 6450 6800 6550
+Text Label 5300 6050 2    50   ~ 0
+LORA_RST
+Text Label 2350 2050 2    50   ~ 0
+LORA_RST
 $EndSCHEMATC
