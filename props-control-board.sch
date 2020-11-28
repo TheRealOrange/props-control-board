@@ -1696,10 +1696,10 @@ F 4 "HCPL2631SDCT-ND" H 8450 5000 50  0001 C CNN "Digikey Part Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_Coaxial_x2_Isolated J?
+L Connector:Conn_Coaxial_x2_Isolated J14
 U 1 1 5FECB519
 P 6800 6250
-F 0 "J?" H 6900 6225 50  0000 L CNN
+F 0 "J14" H 6900 6225 50  0000 L CNN
 F 1 "Conn_Coaxial_x2_Isolated" H 6900 6134 50  0000 L CNN
 F 2 "Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical" H 6800 6250 50  0001 C CNN
 F 3 " ~" H 6800 6250 50  0001 C CNN
@@ -1709,10 +1709,10 @@ $EndComp
 Wire Wire Line
 	6500 6250 6600 6250
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0103
 U 1 1 5FF0C274
 P 6800 6550
-F 0 "#PWR?" H 6800 6300 50  0001 C CNN
+F 0 "#PWR0103" H 6800 6300 50  0001 C CNN
 F 1 "GND" H 6805 6377 50  0000 C CNN
 F 2 "" H 6800 6550 50  0001 C CNN
 F 3 "" H 6800 6550 50  0001 C CNN
